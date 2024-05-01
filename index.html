@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СчётПросто</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+<body>
+    <div class="header">
+        <div class="logo1">
+            <p>СЧЁТ</p>
+        </div>
+        <div class="logo">
+            <p>ПРОСТО</p>
+        </div>
+        <div class="headerText">
+            <p>Тренажёр устного счёта в разных системах счисления</p>
+        </div>
+    </div>
+
+
+    <div class="main1">
+        <div class="block1">
+            <div class="primer">
+            <p id="primer">Здесь появиться задание....</p>
+            <div class="divbase"> 
+                <p class="base">Основание - </p>
+                <p class="base" id="base">0</p>
+               
+            </div>
+            
+            </div>
+            
+            <div class="schet">
+                <p style="color: rgba(8, 198, 5, 1)">✓</p>
+                <p id="prav" style="color: rgba(8, 198, 5, 1)">0</p>
+                <p style="padding-left: 30px;">❌</p>
+                <p id="neprav" style="color: rgba(255, 34, 34, 1)">0</p>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="formD">
+                <p>Сложность</p>
+                <form id="difficult">
+                    <label>
+                      <input type="radio" value="1" name="question" checked="checked">
+                      Низкая
+                    </label>
+                    <br>
+                    <label>
+                      <input type="radio" value="2" name="question">
+                      Средняя
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" value="3" name="question">
+                        Высокая
+                      </label>
+                </form>
+            </div>
+            <div class="divOtvet">
+                <input id="otvet"  class="poleOtveta">
+                
+                <button type="button" class="buttonOtveta" onclick="checkAnswer()">→</button>
+            </div>
+        </div>
+
+        <div class="divButton">
+            <button type="button" class="startbutton" onclick="Start()">Начать</button>
+        </div>
+       
+        
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
